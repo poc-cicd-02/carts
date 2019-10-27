@@ -70,7 +70,7 @@ pipeline {
         }
       }
     }
-    stage('DT Deploy Event') {
+    /*stage('DT Deploy Event') {
       when {
           expression {
           return env.BRANCH_NAME ==~ 'release/.*' || env.BRANCH_NAME ==~'master'
@@ -89,7 +89,7 @@ pipeline {
           }
         }
       }
-    }
+    }*/
     
     stage('Run health check in dev') {
       when {
